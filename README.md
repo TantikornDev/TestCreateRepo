@@ -1,7 +1,7 @@
 # levis
 
 ## Step by Step Instruction for creation this repository
-[](./docs/instuction.md)
+[Creation Instruction](./docs/instuction.md)
 
 ## How to contribute
 1. install `pre-commit`
