@@ -8,6 +8,11 @@
 ```bash
     brew install pre-commit
 ```
+**install lib `goimports`**
+```bash
+    go install golang.org/x/tools/cmd/goimports@latest
+```
+
 2. install `commitlint` **( if require permission use `sudo` )**
 ```bash
     npm install -g @commitlint/cli @commitlint/config-conventional
