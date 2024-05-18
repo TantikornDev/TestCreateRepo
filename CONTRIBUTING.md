@@ -1,10 +1,62 @@
-# Contributing to our repository
+# Contributing
 
-Our Commitment to Open Source can be found here
+Welcome to Levis project. Contributions to the project are always very welcome! 🙏🏽
 
-1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device.
-2. Create a new branch `git checkout -b MY_BRANCH_NAME`
-3. Update new source code to your branch with [GPG sign](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/managing-commit-signature-verification)
-4. Pull request from your branch into this repository `develop` branch
-5. Waiting for reviewing from owners
-6. Accept to pull request / Reject with comment to adjust your pull request
+
+## Licensing
+
+This repository is under the same license as MPLv2. You can find the full text of each license in the `LICENSE` files in this repository.
+
+
+## Submitting a pull request
+One PR should contain only
+- one feature
+- fixed bugs
+- refactor
+
+so the reviewer can focus only on list above also this will keep PR in a reasonable size to review.
+
+
+## Commit message
+For the commit message, use the following format: [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#specification)
+
+
+## How to contribute
+
+<!-- ![how to contribute flow diagram](assets/images/how-to-contribute.png) -->
+
+### 1. Create an Issue
+[Create a new issue](https://github.com/jumpbox-academy/levis/issues/new). Please describe details of what you want to do. You can see [our previous issues](https://github.com/jumpbox-academy/levis/issues) as examples. Create an issue is easy; make it simple. When you have an idea, create it. It does not need to be perfect from the start. (Try type `g i` and then `c` with your keyboard.)
+
+### 2. Make a Discussion
+Let you, the admin team, and other members a chance to make conversation on the issue topic:
+
+  - Discuss solutions and alternatives. Two heads are better than one.
+  - From the discussion, we may prevent duplicate or unnecessary works that save your valuable time later.
+  - Ask any questions that you want people to help.
+  - Let people know in advance what you are going to do is always a good idea.
+
+Once things ready, set `Assignees` to a member who wishes to work on the issue. It can be either the issue's creator or anyone else. And you can remove `help wanted` label, if any.
+
+> These first two steps are not required in all scenarios, but we encourage you because more collaboration makes things better and more enjoyable.✨
+
+### 3. Open a Pull Request
+- Fork this repository to your own GitHub account and then clone it to your local machine.
+- Create a new branch, name it to what you are going to change/add. Please use `kebab-case` naming.
+  ```sh
+  git checkout -b your-branch-name
+  ```
+- Start your work, commit the code.
+- Push your changes to your origin.
+  ```sh
+  git push origin -u your-branch-name
+  ```
+
+- Create a new Pull Request (PR) targeting the `main` branch of `awsp`
+
+### 4. Review and Complete the Work
+- Waiting for reviewing. Push more commits if needed to fix your work from pull request feedback.
+  ```sh
+  git push
+  ```
+- A pull request needs at least one careful approval before anyone can merge to `main` branch. Then it will automatically deploy to the server.

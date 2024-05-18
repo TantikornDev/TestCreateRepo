@@ -16,3 +16,12 @@
 ```bash
     pre-commit install
 ```
+
+## Contributing
+
+We welcome community contributions and pull requests. See our [contribution
+guide](./CONTRIBUTING.md) for more information on how to report issues, set up a
+development environment and submit code.
+
+## License
+This project is distributed under the [MPLv2, Copyright (c) 2024 Jumpbox Co., Ltd.](./LICENSE)
