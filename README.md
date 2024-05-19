@@ -30,6 +30,7 @@ levis create -f levis.yaml
 **install lib `goimports`**
 ```bash
     go install golang.org/x/tools/cmd/goimports@latest
+    go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.58.1
 ```
 
 2. install `commitlint` **( if require permission use `sudo` )**

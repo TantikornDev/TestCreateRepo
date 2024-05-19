@@ -7,5 +7,7 @@ package main
 import "github.com/jumpbox-academy/levis/cmd"
 
 func main() {
+
 	cmd.Execute()
+
 }
