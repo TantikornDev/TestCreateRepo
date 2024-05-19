@@ -1,5 +1,24 @@
 # levis
 
+Levis is a binary tool designed to simplify the deployment process for users who don’t need to focus on the complexities of Kubernetes objects. Levis allows users to deploy their applications effortlessly
+
+**For example:**
+
+you can generate Kubernetes Manifest via a simple `yaml` file
+1. Create `levis.yaml` configuration
+```yaml
+levis:
+  deployment:
+    containers:
+      image: "nginx"
+      port: 80
+```
+
+2. generate Kubernetes Manifest via `levis create` command
+```bash
+levis create -f levis.yaml
+```
+
 ## Step by Step Instruction for creation this repository
 [Creation Instruction](./docs/instuction.md)
 
