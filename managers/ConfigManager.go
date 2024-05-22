@@ -8,7 +8,7 @@ import (
 	"github.com/spf13/viper"
 )
 
-func ConfigParse() {
+func DeploymentConfigParse(levis models.Levis) {
 
 	viper.SetConfigFile("./examples/levis.yaml")
 	viper.AutomaticEnv()
