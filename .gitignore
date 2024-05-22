@@ -34,8 +34,9 @@ cdk8s-golang
 *.bk
 
 # Web Doc via Vitepress
-.vite_opt_cache
-.vitepress/dist/
+*/.vite_opt_cache
+*/.vitepress/dist/
+*/.vitepress/cache
 
 # Nodejs
 node_modules
