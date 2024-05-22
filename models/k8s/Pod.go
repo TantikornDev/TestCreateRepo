@@ -4,7 +4,7 @@ type Pod struct {
 	// List of containers belonging to the pod.
 	//
 	// Containers cannot currently be added or removed. There must be at least one container in a Pod. Cannot be updated.
-	Containers *[]*Container `field:"required" json:"containers" yaml:"containers"`
+	Containers []Container // `field:"required" json:"containers" yaml:"containers"`
 
 	// ImagePullSecrets is an optional list of references to secrets in the same namespace to use for pulling any of the images used by this PodSpec.
 	//
@@ -27,7 +27,7 @@ type Pod struct {
 	// ServiceAccountName is the name of the ServiceAccount to use to run this pod.
 	//
 	// More info: https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
-	ServiceAccountName *string `field:"optional" json:"serviceAccountName" yaml:"serviceAccountName"`
+	// ServiceAccountName *string `field:"optional" json:"serviceAccountName" yaml:"serviceAccountName"`
 	// Optional duration in seconds the pod needs to terminate gracefully.
 	//
 	// May be decreased in delete request. Value must be non-negative integer. The value zero indicates stop immediately via the kill signal (no opportunity to shut down). If this value is nil, the default grace period will be used instead. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process. Defaults to 30 seconds.
@@ -52,15 +52,15 @@ type Container struct {
 	// Name of the container specified as a DNS_LABEL.
 	//
 	// Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.
-	Name *string `field:"required" json:"name" yaml:"name"`
+	Name string // `field:"required" json:"name" yaml:"name"`
 	// Arguments to the entrypoint.
 	//
 	// The container image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. Double $$ are reduced to a single $, which allows for escaping the $(VAR_NAME) syntax: i.e. "$$(VAR_NAME)" will produce the string literal "$(VAR_NAME)". Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
-	Args *[]*string `field:"optional" json:"args" yaml:"args"`
+	// Args *[]*string `field:"optional" json:"args" yaml:"args"`
 	// Entrypoint array.
 	//
 	// Not executed within a shell. The container image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. Double $$ are reduced to a single $, which allows for escaping the $(VAR_NAME) syntax: i.e. "$$(VAR_NAME)" will produce the string literal "$(VAR_NAME)". Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
-	Command *[]*string `field:"optional" json:"command" yaml:"command"`
+	// Command *[]*string `field:"optional" json:"command" yaml:"command"`
 	// List of environment variables to set in the container.
 	//
 	// Cannot be updated.
@@ -72,13 +72,13 @@ type Container struct {
 	// Container image name.
 	//
 	// More info: https://kubernetes.io/docs/concepts/containers/images This field is optional to allow higher level config management to default or override container images in workload controllers like Deployments and StatefulSets.
-	Image *string `field:"optional" json:"image" yaml:"image"`
+	Image string //`field:"optional" json:"image" yaml:"image"`
 	// Image pull policy.
 	//
 	// One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images#updating-images
 	// Default: Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images#updating-images
 	//
-	ImagePullPolicy *string `field:"optional" json:"imagePullPolicy" yaml:"imagePullPolicy"`
+	ImagePullPolicy string //`field:"optional" json:"imagePullPolicy" yaml:"imagePullPolicy"`
 	// Actions that the management system should take in response to container lifecycle events.
 	//
 	// Cannot be updated.

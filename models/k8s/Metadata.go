@@ -6,7 +6,7 @@ type Metadata struct {
 	// The object's namespace.
 	Namespace string
 	// Add an annotation.
-	Annotations *map[string]*string
+	Annotations map[string]string
 	// Add a label.
-	Labels *map[string]*string
+	Labels map[string]string
 }
