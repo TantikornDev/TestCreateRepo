@@ -24,11 +24,6 @@ go.work
 dist
 cdk8s-golang
 
-# Nodejs
-node_modules
-package-lock.json
-package.json
-
 # Mac Configuration
 .DS_Store
 ._.DS_Store
@@ -37,3 +32,12 @@ package.json
 
 # backup file
 *.bk
+
+# Web Doc via Vitepress
+.vite_opt_cache
+.vitepress/dist/
+
+# Nodejs
+node_modules
+package-lock.json
+package.json
