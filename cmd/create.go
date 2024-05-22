@@ -6,6 +6,7 @@ package cmd
 import (
 	"fmt"
 
+	"github.com/jumpbox-academy/levis/managers"
 	"github.com/spf13/cobra"
 )
 
@@ -25,7 +26,9 @@ For example:
 
 `,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("create called: ", args[FIRST_ARGUMENT])
+		// fmt.Println("create called: ", args[FIRST_ARGUMENT])
+		deployment := managers.DeploymentConfigParse(args[FIRST_ARGUMENT])
+		fmt.Println("Deployment: ", deployment)
 	},
 }
 
