@@ -21,8 +21,6 @@ In this section, you will find detailed steps to implement and develop the Levis
 
 2. Implementing the Levis Website
 This section provides a comprehensive guide to implementing and developing the Levis website. From setting up the project to deploying updates, these steps will help you contribute to the website’s development, ensuring it is informative and user-friendly. If you're interested in contributing, please refer to the detailed guide at [Levis Website Contribution Guide](./web/getting-started.md).
-<<<<<<< HEAD
-=======
 
 ---
 
@@ -83,4 +81,3 @@ Once things ready, set `Assignees` to a member who wishes to work on the issue. 
   git push
   ```
 - A pull request needs at least one careful approval before anyone can merge to `main` branch. Then it will automatically deploy to the server.
->>>>>>> 24ac96b (doc: migrate contribute information from contribute.md to levis website in contribution page)

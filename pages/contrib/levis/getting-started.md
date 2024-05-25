@@ -41,15 +41,6 @@ go get github.com/spf13/viper
 ```
 for more information about `Viper`: [Link](https://github.com/spf13/viper)
 
-<<<<<<< HEAD
-### How to add command
-```bash
-cobra-cli add <command> e.g. cobra-cli add create
-```
-for more information about `Cobra`: [Link](https://github.com/spf13/viper)
-
-=======
->>>>>>> 24ac96b (doc: migrate contribute information from contribute.md to levis website in contribution page)
 ### Setup Pre-Commit
 ```bash
 pre-commit install

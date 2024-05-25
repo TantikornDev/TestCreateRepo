@@ -56,9 +56,5 @@ $ bun run docs:build
 
 ## How to Test on `Preview Mode`
 ```bash
-<<<<<<< HEAD
-$ vitepress preview
-=======
 $ bun run docs:preview
->>>>>>> 24ac96b (doc: migrate contribute information from contribute.md to levis website in contribution page)
 ```
