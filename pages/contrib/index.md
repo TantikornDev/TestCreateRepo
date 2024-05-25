@@ -73,7 +73,7 @@ Once things ready, set `Assignees` to a member who wishes to work on the issue. 
   git push origin -u your-branch-name
   ```
 
-- Create a new Pull Request (PR) targeting the `main` branch of `awsp`
+- Create a new Pull Request (PR) targeting the `main` branch of `levis`
 
 ### 4. Review and Complete the Work
 - Waiting for reviewing. Push more commits if needed to fix your work from pull request feedback.
