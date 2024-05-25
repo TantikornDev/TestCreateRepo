@@ -1,4 +1,14 @@
+---
+outline: deep
+title: 'Initialize Levis Website Instruction'
+description: Initialize Levis Website Instruction
+---
 
+# Initialize Levis Website Instruction
+Welcome to the Levis Website Init Project Guide! This document provides step-by-step instructions for setting up the Levis website using VitePress. Follow these guidelines to lay the groundwork for developing and deploying the Levis website.
+
+
+## Initialize this project
 ```bash
 $ bun add -D vitepress
 ```

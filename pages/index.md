@@ -14,7 +14,7 @@ hero:
       text: Examples
       link: docs/api-examples
   image:
-    src: /assets/logo-white.png
+    src: /assets/logo-white-line.png
     alt: Levis
 
 features:

@@ -11,8 +11,8 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: 'assets/logo.png',
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: 'docs/markdown-examples' },
+      { text: 'Home', link: '/', },
+      { text: 'Examples', link: 'docs/markdown-examples', activeMatch: '/docs' },
       {
         text: pkg.version,
         items: [
@@ -28,16 +28,9 @@ export default defineConfig({
       }
     ],
     sidebar: {
-      // {
-      //   text: 'Examples',
-      //   items: [
-      //     { text: 'Markdown Examples', link: 'docs/markdown-examples' },
-      //     { text: 'Runtime API Examples', link: 'docs/api-examples' }
-      //   ],
-
-      // },
       '/docs/': { base: '/docs/', items: sidebarDocs()},
-      '/contrib/': { base: '/contrib/', items: sidebarContribution()}
+      '/contrib/': { base: '/contrib/', items: sidebarContribution()},
+      '/arch/': { base: '/arch/', items: sidebarArchiving()}
     },
     search: {
       provider: 'local'
@@ -79,43 +72,30 @@ function sidebarDocs(): DefaultTheme.SidebarItem[] {
         { text: 'Connecting to a CMS', link: 'cms' }
       ]
     },
-    { text: 'Contribution', base: '/contrib/', link: 'contrib' }
+    { text: 'Contribution', base: '/contrib/', link: 'index' }
   ]
 }
 function sidebarContribution(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: 'Contribution',
-      collapsed: false,
+      text: 'Contribution', link: 'index',
       items: [
         {
-          text: 'Getting Started',
+          text: 'Levis',
           collapsed: false,
           items: [
-            { text: 'Getting Started', link: 'getting-started' },
-            { text: 'Routing', link: 'routing' },
+            { text: 'Getting Started', link: '/levis/getting-started' },
+            { text: 'Add New Command', link: '/levis/adding-command' }
           ]
         },
         {
-          text: 'Levis',
+          text: 'Levis Website',
           collapsed: true,
           items: [
-            { text: 'What is VitePress?', link: 'what-is-vitepress' },
-            { text: 'Getting Started', link: 'getting-started' },
-            { text: 'Routing', link: 'routing' },
-            { text: 'Deploy', link: 'deploy' }
+            { text: 'Getting Started', link: '/web/getting-started' },
+            { text: 'What is VitePress?', link: '/web/what-is-vitepress' },
           ]
-        },
-        {
-          text: 'Levis Document',
-          collapsed: true,
-          items: [
-            { text: 'Getting Started', link: 'getting-started' },
-            { text: 'What is VitePress?', link: 'what-is-vitepress' },
-          ]
-        },
-        { text: 'Routing', link: 'routing' },
-        { text: 'Deploy', link: 'deploy' }
+        }
       ]
     },
     {
@@ -125,6 +105,19 @@ function sidebarContribution(): DefaultTheme.SidebarItem[] {
         { text: 'Overview', link: 'adr/index' },
         { text: 'ADR001: Architecture Decision Record (ADR) log', link: 'adr/adr001-add-adr-log' },
         { text: 'ADR002: xxx', link: 'frontmatter' }
+      ]
+    },
+    { text: 'Archived Documents', base: '/arch/', link: 'index' }
+  ]
+}
+
+function sidebarArchiving(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: 'Archived Documents', link: 'index',
+      items: [
+        { text: 'Levis Instruction', link: 'levis-instruction' },
+        { text: 'Levis Web Instruction', link: 'levis-web-instruction' }
       ]
     }
   ]

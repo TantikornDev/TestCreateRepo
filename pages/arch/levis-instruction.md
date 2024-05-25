@@ -1,4 +1,11 @@
-# Instruction
+---
+outline: deep
+title: 'Initialize Levis Project Instruction'
+description: Initialize Levis Project Instruction
+---
+
+# Initialize Levis Project Instruction
+Welcome to the Levis executable file Init Project Guide! This document outlines the initial steps required to set up the Levis executable file project using Go. Follow these instructions to establish the foundation of your development environment and get started with the Levis executable file.
 
 ## Initialize this project
 1. create levis repository in github: `https://github.com/jumpbox-academy/levis.git`
