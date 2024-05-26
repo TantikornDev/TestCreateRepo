@@ -6,13 +6,17 @@ const pkg = require('../package.json')
 export default defineConfig({
   title: "Levis",
   outDir: '../docs',
+  head: [
+    ['link', { rel: "icon", type: "image/png", sizes: "32x32", href: "../assets/favicon.ico"}],
+
+  ],
   description: "Levis is a binary tool designed to simplify the deployment process for users who don’t need to focus on the complexities of Kubernetes objects.",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: 'assets/logo.png',
     nav: [
       { text: 'Home', link: '/', },
-      { text: 'Examples', link: 'docs/markdown-examples', activeMatch: '/docs' },
+      { text: 'Examples', link: 'docs/levis-examples', activeMatch: '/docs' },
       {
         text: pkg.version,
         items: [
@@ -49,27 +53,19 @@ export default defineConfig({
 function sidebarDocs(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: 'Getting Started',
+      text: 'Getting Started', link: 'getting-started',
       collapsed: false,
       items: [
         { text: 'What is VitePress?', link: 'what-is-vitepress' },
-        { text: 'Getting Started', link: 'getting-started' },
         { text: 'Routing', link: 'routing' },
         { text: 'Deploy', link: 'deploy' }
-      ]
+      ],
     },
     {
-      text: 'Examples',
+      text: 'Examples', link: 'levis-examples',
       collapsed: false,
       items: [
         { text: 'Using a Custom Theme', link: 'custom-theme' },
-        {
-          text: 'Extending the Default Theme',
-          link: 'extending-default-theme'
-        },
-        { text: 'Build-Time Data Loading', link: 'data-loading' },
-        { text: 'SSR Compatibility', link: 'ssr-compat' },
-        { text: 'Connecting to a CMS', link: 'cms' }
       ]
     },
     { text: 'Contribution', base: '/contrib/', link: 'index' }
@@ -104,7 +100,7 @@ function sidebarContribution(): DefaultTheme.SidebarItem[] {
       items: [
         { text: 'Overview', link: 'adr/index' },
         { text: 'ADR001: Architecture Decision Record (ADR) log', link: 'adr/adr001-add-adr-log' },
-        { text: 'ADR002: xxx', link: 'frontmatter' }
+        { text: 'ADR002: xxx', link: 'mdfile-name' },
       ]
     },
     { text: 'Archived Documents', base: '/arch/', link: 'index' }
@@ -119,6 +115,7 @@ function sidebarArchiving(): DefaultTheme.SidebarItem[] {
         { text: 'Levis Instruction', link: 'levis-instruction' },
         { text: 'Levis Web Instruction', link: 'levis-web-instruction' }
       ]
-    }
+    },
+    { text: 'Contribution', base: '/contrib/', link: 'index' }
   ]
 }

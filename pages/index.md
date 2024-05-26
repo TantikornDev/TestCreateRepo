@@ -9,13 +9,15 @@ hero:
   actions:
     - theme: brand
       text: Getting Started
-      link: docs/markdown-examples
+      link: docs/getting-started
     - theme: alt
       text: Examples
-      link: docs/api-examples
-  image:
-    src: /assets/logo-white-line.png
-    alt: Levis
+      link: docs/levis-examples
+  image: {
+      light: '/assets/logo-white-line.png',
+      dark: '/assets/logo-white-line-dark.png',
+      alt: Levis
+  }
 
 features:
   - title: Short and Simple
