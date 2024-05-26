@@ -11,7 +11,7 @@ We invite you to join our vibrant community of contributors. Every contribution 
 
 Be part of something big, and let's build the future of open-source infrastructure together!
 
-If you need help, just jump into our [email](levis.tools@gmail.com)
+If you need help, just jump into our [email](mailto:levis.tools@gmail.com)
 
 ## Overview
 Thank you again! for your interest in contributing to Levis! This document is divided into two sections to guide you through the process of contributing to both the `Levis` execuable file and the `Levis website`. Follow the step-by-step instructions to get started.
