@@ -49,17 +49,19 @@ Note:
 |docs | This directory contains the source files for the project documentation written using VitePress. These files are used to generate the static documentation site.|
 
 
-**Documentation with VitePress**
+**Levis Website Documentation with VitePress**
 
-The pages directory is dedicated to documentation and is built using VitePress. The content in this directory is written in Markdown and provides detailed information on how to use and contribute to Levis. When the documentation is built using VitePress, the output is generated as a static site and placed in the docs directory.
+The docs directory is dedicated to documentation and is built using VitePress. The content in this directory is written in Markdown and provides detailed information on how to use and contribute to Levis. When the documentation is built using VitePress, the output is generated as a static site.
 
-To build the documentation, you can run the following command:
+To run the documentation on `local`, you can run the following command:
 
 ```sh
-vitepress build pages -o docs
+cd docs && bun run bun run docs:dev
 ```
 
-This command compiles the Markdown files in the pages directory into a static site, which is then stored in the docs directory.
+This command compiles the Markdown files in the docs directory into a static site, which is then run in the local for development.
+
+please refer to the detailed [Levis Website Contribution](./web/getting-started).
 
 
 ## Summary
