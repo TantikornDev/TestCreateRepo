@@ -6,12 +6,9 @@ The Levis repository is organized to facilitate ease of development, contributio
 levis
 ├── LICENSE
 ├── README.md
-├── cdk8s-golang
 ├── cdk8s.yaml
 ├── cmd
 ├── commitlint.config.js
-├── dist
-├── docs
 ├── examples
 ├── go.mod
 ├── go.sum
@@ -19,7 +16,9 @@ levis
 ├── main.go
 ├── managers
 ├── models
-└── pages
+├── dist
+├── node_modules
+└── docs
 ```
 ## Directory and File Descriptions
 
@@ -39,9 +38,10 @@ levis
 |managers | Contains various manager packages that handle different functionalities of the application.|
 |models | Defines the data models and structures used throughout the application.|
 |*dist | Directory for distribution files. It typically contains built and compiled output files.|
+|*node_modules | Directory for Node.js modules installed using the Bun package manager, containing project dependencies.|
 
 Note:
-- `*`
+- `*`: This symbol represent `generated file/folder` by library and ignored by .gitignore.
 
 ### Levis Website
 |File/Directory | Description|
