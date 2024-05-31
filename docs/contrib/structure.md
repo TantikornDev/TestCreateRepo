@@ -1,0 +1,66 @@
+
+# Levis Repository Structure
+The Levis repository is organized to facilitate ease of development, contribution, and documentation. Here is an overview of the main components and their purposes:
+
+```go
+levis
+├── LICENSE
+├── README.md
+├── cdk8s-golang
+├── cdk8s.yaml
+├── cmd
+├── commitlint.config.js
+├── dist
+├── docs
+├── examples
+├── go.mod
+├── go.sum
+├── imports
+├── main.go
+├── managers
+├── models
+└── pages
+```
+## Directory and File Descriptions
+
+### Levis Execuable file
+|File/Directory | Description|
+|--|--|
+|LICENSE | Contains the licensing information for the Levis project.|
+|README.md | Provides an overview of the project, including instructions on how to set up and use Levis.|
+|cdk8s.yaml | Configuration file for cdk8s, specifying the project setup and dependencies.|
+|cmd | Contains the command-line interface (CLI) commands for Levis. Each command is implemented as a separate Go file.|
+|commitlint.config.js | Configuration file for commit message linting, ensuring consistent and conventional commit messages.|
+|examples | Contains example configurations and usage scenarios for Levis, demonstrating how to use the tool effectively.|
+|go.mod | The Go module file, which defines the module's path and its dependencies.|
+|go.sum | The checksum file for Go modules, ensuring the integrity of dependencies.|
+|imports | Directory for imported libraries and dependencies that are used within the project.|
+|main.go | The main entry point for the Levis application, containing the primary logic for starting the application.|
+|managers | Contains various manager packages that handle different functionalities of the application.|
+|models | Defines the data models and structures used throughout the application.|
+|*dist | Directory for distribution files. It typically contains built and compiled output files.|
+
+Note:
+- `*`
+
+### Levis Website
+|File/Directory | Description|
+|--|--|
+|docs | This directory contains the source files for the project documentation written using VitePress. These files are used to generate the static documentation site.|
+
+
+**Documentation with VitePress**
+
+The pages directory is dedicated to documentation and is built using VitePress. The content in this directory is written in Markdown and provides detailed information on how to use and contribute to Levis. When the documentation is built using VitePress, the output is generated as a static site and placed in the docs directory.
+
+To build the documentation, you can run the following command:
+
+```sh
+vitepress build pages -o docs
+```
+
+This command compiles the Markdown files in the pages directory into a static site, which is then stored in the docs directory.
+
+
+## Summary
+This repository structure is designed to keep the codebase organized and maintainable. Each directory and file serves a specific purpose, contributing to the overall functionality and documentation of the Levis project. By following this structure, contributors can easily navigate the project and make meaningful contributions.
