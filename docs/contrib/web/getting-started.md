@@ -59,4 +59,4 @@ $ bun run docs:build
 $ bun run docs:preview
 ```
 
-Note: in section `How to Build` and `How to Test on Preview Mode` use for testing of publishing Levis webiste in your local environment.
+**Note:** in section `How to Build` and `How to Test on Preview Mode` use for testing of publishing Levis webiste in your local environment.
