@@ -40,7 +40,7 @@ Note: When writing this document, Bun v1.1.9 was being used.
 **Let's go ahead**
 
 ```bash
-cd levis/pages  # change to root directory of project
+cd levis/docs  # change to root directory of project
 bun install  # fetch dependency packages - may take a while
 ```
 
@@ -58,3 +58,5 @@ $ bun run docs:build
 ```bash
 $ bun run docs:preview
 ```
+
+Note: in section `How to Build` and `How to Test on Preview Mode` use for testing of publishing Levis webiste in your local environment.
