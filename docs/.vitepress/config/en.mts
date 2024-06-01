@@ -76,17 +76,19 @@ function sidebarContribution(): DefaultTheme.SidebarItem[] {
         {
           text: 'Levis',
           collapsed: false,
+          base: '/contrib/levis/',
           items: [
-            { text: 'Getting Started', link: '/levis/getting-started' },
-            { text: 'Add New Command', link: '/levis/adding-command' }
+            { text: 'Getting Started', link: 'getting-started' },
+            { text: 'Add New Command', link: 'adding-command' }
           ]
         },
         {
           text: 'Levis Website',
+          base: '/contrib/web/',
           collapsed: true,
           items: [
-            { text: 'Getting Started', link: '/web/getting-started' },
-            { text: 'What is VitePress?', link: '/web/what-is-vitepress' },
+            { text: 'Getting Started', link: 'getting-started' },
+            { text: 'What is VitePress?', link: 'what-is-vitepress' },
           ]
         }
       ]
@@ -94,10 +96,12 @@ function sidebarContribution(): DefaultTheme.SidebarItem[] {
     {
       text: 'Architecture Decision Records (ADR)',
       collapsed: true,
+      base: 'contrib/adr/',
       items: [
-        { text: 'Overview', link: 'adr/index' },
-        { text: 'ADR001: Architecture Decision Record (ADR) log', link: 'adr/adr001-add-adr-log' },
-        { text: 'ADR002: xxx', link: 'mdfile-name' },
+        { text: 'Overview', link: 'index' },
+        { text: 'ADR001: Architecture Decision Record(ADR) log', link: 'adr001-add-adr-log' },
+        { text: 'ADR002: Choose Golang and cdk8s', link: 'adr002-choose-golang-cdk8s' },
+        { text: 'ADR003: Choose Viper and Cobra', link: 'adr003-choose-viper-and-cobra' },
       ]
     },
     { text: 'Archived Documents', base: '/arch/', link: 'index' }

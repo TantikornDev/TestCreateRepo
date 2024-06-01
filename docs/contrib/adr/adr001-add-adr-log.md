@@ -2,6 +2,12 @@
 layout: doc
 title: 'ADR001: Architecture Decision Record (ADR) log'
 description: Architecture Decision Record (ADR) logs as a reference point for the team
+prev:
+  text: 'ADR Overview'
+  link: '/contrib/adr/index'
+next:
+  text: 'ADR002: Choose Golang and cdk8s'
+  link: '/contrib/adr/adr002-choose-golang-cdk8s'
 ---
 
 # ADR001: Architecture Decision Record (ADR) log
@@ -18,4 +24,4 @@ in the project.
 
 ## Risks
 
-People stop adding ADRs to the log and context gets lost
+People stop adding ADRs to the log and context gets lost.

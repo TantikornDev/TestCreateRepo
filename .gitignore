@@ -40,5 +40,4 @@ cdk8s-golang
 
 # Nodejs
 node_modules
-package-lock.json
-package.json
+.vitepress/cache

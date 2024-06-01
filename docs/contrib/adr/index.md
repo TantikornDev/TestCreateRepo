@@ -2,6 +2,9 @@
 layout: doc
 title: Architecture Decision Records (ADR)
 description: Overview of Architecture Decision Records (ADR)
+next:
+  text: 'ADR001: Architecture Decision Record(ADR) log'
+  link: '/contrib/adr/adr001-add-adr-log'
 ---
 
 # Architecture Decision Records (ADR)
