@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export const shared = defineConfig({
   title: "Levis",
+  base: '/TestCreateRepo/',
   lastUpdated: true,
   cleanUrls: true,
   metaChunk: true,
